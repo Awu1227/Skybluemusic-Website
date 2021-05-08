@@ -1,0 +1,176 @@
+.mod_playlist{
+    height: 488px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+header {
+    padding-top: 30px;
+    font-size:x-large;
+    font-weight: 700;
+    letter-spacing: 10px;
+}
+.listname ul li {
+    float: left;
+    margin-top: 30px;
+    margin-left: 74px;
+    font-size: larger;
+}
+.listname ul li:first-child{
+    margin-left: 306px;
+}
+.list_main {
+    margin-top: 50px;
+    width: 1200px;
+    height: 310px;
+}
+.list_main ul li{
+    margin-top: 20px;
+    float: left;
+    width: 224px;
+    height: 310px;
+    margin-left: 5px;
+}
+.playlist_fengmian {
+    position: relative;
+    width: 224px;
+    height: 224px;
+}
+.playlist_fengmian img {
+    width: 100%;
+    height: 100%;
+}
+.mask {
+    display: none ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+}
+.playlist_title_txt a{
+    font-size: 14px;
+    color: #000;
+    cursor: pointer;
+}
+.playlist_title_txt a:hover {
+    color: skyblue;
+}
+.playlist_title_txt {
+    display: block;
+    margin-top: 15px;
+    white-space: normal;
+    float: left;
+    
+}
+.playlist__other{
+    float: left;
+}
+.mod_newsong{
+    height: 488px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+.newsong_bar {
+    width: 1200px;
+    height: 50px;
+    /* background-color: pink; */
+}
+.newsongplay_btn{
+    float: left;
+    margin-top: 12px;
+    width: 70px;
+    height: 25px;
+    border: 1px solid #ccc;
+    color: #000;
+    text-align: center;
+    line-height: 25px;
+}
+.newsong_bar_item{
+    float: left;
+    font-size: 15px;
+    margin: 12px 90px;
+    color: #333;
+}
+.newsong_listul{
+    width: 1200px;
+    height: 330px;
+    /* background-color: green; */
+}
+.newsong_item {
+    float: left;
+    width: 400px;
+    height: 110px;
+    /* background-color: lightyellow; */
+}
+.newsong_item_box img{
+    float: left;
+    margin-top: 11px;
+    width: 86px;
+    height: 86px;
+}
+.newsong_item_cont {
+float: left;
+margin-top: 11px;
+text-align: center;
+    width: 200px;
+    height: 80px;
+    /* background-color: purple; */
+}
+.newsong_item_cont h3{
+    margin-top: 20px;
+    width: 200px;
+    height: 18px;
+    /* background-color: rgb(40, 57, 156) */
+    ;
+}
+.newsong_item_cont p{
+    margin-top: 9px;
+    width: 200px;
+    height: 18px;
+    /* background-color: rgb(40, 57, 156) */
+    ;
+}
+.newsong_item_time {
+    float: right;
+    margin-top: 11px;
+    text-align: center;
+    line-height: 85px;
+    width: 68px;
+    height: 85px;
+}
+.newsong_switch{
+    text-align: center;
+    width: 1200px;
+    height: 38px;
+    /* background-color: skyblue; */
+}
+
+.mod_newsonglist{
+    width: 1200px;
+    height: 341px;
+    background-color: lightgreen;
+    /* overflow: hidden; */
+}
+.newsong_list{
+    position: relative;
+    width: 400%;
+    height: 330px;
+    transition: .5s;
+}
+.newsong_listul {
+    float: left;
+}
+/* 设置新歌区域轮播图按钮 */
+.newsong_switch_item {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    margin: 0 5px;
+    margin-top: 10px;
+}
+.current {
+    background-color: skyblue;
+}
