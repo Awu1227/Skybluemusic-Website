@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蓝天音乐-海量无损曲库新歌热歌天天畅听的高品质音乐平台！</title>
+    <!-- 关键字 -->
+    <meta name="keywords" content="音乐,蓝天音乐,在线听歌,音乐下载,音乐播放器,音乐网站,MV,巅峰榜,音乐排行榜,翻译歌曲,热门歌曲,经典老歌,无损音乐,无损曲库" />
+    <!-- 网站说明 -->
+    <meta name="description"
+        content="蓝天音乐是腾讯公司推出的一款网络音乐服务产品，海量音乐在线试听、新歌热歌在线首发、歌词翻译、手机铃声下载、高品质无损音乐试听、海量无损曲库、正版音乐下载、空间背景音乐设置、MV观看等，是互联网音乐播放和下载的优选。" />
+    <!-- 引入favicon图标 -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- 引入我们的初始化样式文件 -->
+    <link rel="stylesheet" href="css/base.css">
+    <!-- 引入我们公共的样式文件 -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="./css/player.css">
+
+</head>
+
+<body>
+
+    <!-- 快捷导航模块 -->
+    <div class="shortcut" id="player">
+        <div class="w top_subnav">
+            <h1 class="music_title">
+                <a href="index.html">
+                    <img src="images/音乐.png" alt="" title="蓝天音乐">
+                    蓝天音乐
+                </a>
+            </h1>
+            <ul class="mod_mid">
+                <li>
+                    <div class="top_search">
+                        <input type="text" placeholder="搜索音乐、MV、歌单、用户" autocomplete="off" v-model='query'
+                            @keyup.enter="searchMusic();">
+                        <div class="search_icon" @click="searchMusic();"><img src="images/搜索.png" alt=""></div>
+                        <div class="login_icon"><img src="images/登录、注册.png" alt=""></div>
+                        <span class="login"><a href="login.html">登录</a></span>
+                        <div class="qrcode"><img src="./images/skyblue123.3vfree .png" alt="" width="80px"
+                                height="80px"></div>
+                    </div>
+
+
+                </li>
+                <li> <a href="vip.html" target="_blank">VIP</a> </li>
+                <li><a href="mymuic.html">我的音乐</a></li>
+                <li><a href="index.html">音乐馆</a></li>
+            </ul>
+        </div>
+        <div class="w bottom_subnav">
+            <ul>
+                <li> <a href="index.html">首页</a></li>
+                <li><a href="singer.html">歌手</a></li>
+                <li><a href="toplist.html">排行榜</a></li>
+                <li><a href="player.html">我的播放器</a></li>
+                <li><a href="player.html">MV</a></li>
+            </ul>
+        </div>
+        <!-- 快捷导航模块 -->
+
+
+    </div>
+
+    <!-- 歌单模块start -->
+    <div class="mod_playlist">
+        <div class="w play_list">
+            <header>歌单推荐</header>
+            <div class="listname">
+                <ul>
+                    <li> <a href="">为你推荐</a> </li>
+                    <li> <a href="">华语民谣</a> </li>
+                    <li> <a href="">70年代 </a></li>
+                    <li> <a href="">民谣</a> </li>
+                    <li> <a href="">寂寞</a> </li>
+                    <li> <a href="">乐器</a></li>
+                    <li> <a href="">...</a></li>
+                </ul>
+            </div>
+            <div class="list_main">
+                <ul>
+                    <li>
+                        <div class="playlist_fengmian">
+                            <div class="mask"></div>
+                            <img src="images/sing1.jfif" alt="">
+                            <span class="playlist_title_txt">
+                                <a>轻音乐 | 随着音乐旋律缓缓睡去</a>
+                            </span>
+                            <span class="playlist__other">播放量：92.6万</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="playlist_fengmian">
+                            <div class="mask"></div>
+                            <img src="images/sing2.jfif" alt="">
+                            <span class="playlist_title_txt">
+                                <a>「古风」一曲一场叹，一生为一人</a>
+                            </span>
+                            <span class="playlist__other">播放量：5492.4万</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="playlist_fengmian">
+                            <div class="mask"></div>
+                            <img src="images/sing3.jfif" alt="">
+                            <span class="playlist_title_txt">
+                                <a>我是怪人听歌也会哭的</a>
+                            </span>
+                            <span class="playlist__other">播放量：271.3万</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="playlist_fengmian">
+                            <div class="mask"></div>
+                            <img src="images/sing4.jfif" alt="">
+                            <span class="playlist_title_txt">
+                                <a>超好听的中国风，都适合单曲循环</a>
+                            </span>
+                            <span class="playlist__other">播放量：2967.7万</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="playlist_fengmian">
+                            <div class="mask"></div>
+                            <img src="images/sing5.jfif" alt="">
+                            <span class="playlist_title_txt">
+                                <a>小众英文｜世间所有温柔涌向你</a>
+                            </span>
+                            <span class="playlist__other">播放量：2125.8万</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 歌单模块end -->
+    <!-- 新歌模块start -->
+    <div class="mod_newsong">
+        <div class="w newsong">
+            <header>新歌首发</header>
+            <div class="newsong_bar">
+                <a href="" class="newsongplay_btn">播放全部</a>
+                <a href="" class="newsong_bar_item">最新</a>
+                <a href="" class="newsong_bar_item">港台</a>
+                <a href="" class="newsong_bar_item">欧美</a>
+                <a href="" class="newsong_bar_item">韩国</a>
+                <a href="" class="newsong_bar_item">日本</a>
+            </div>
+            <div class="mod_newsonglist">
+                <div class="newsong_list" style="left:-0%">
+                    <ul class="newsong_listul">
+                        <li class="newsong_item">
+                            <div class="newsong_item_box">
+                                <a href=""><img src="images/newsong1.jpg" alt=""></a>
+                                <div class="newsong_item_cont">
+                                    <h3>All I Know So Far (Explicit)</h3>
+                                    <p>P!NK</p>
+                                </div>
+                                <div class="newsong_item_time">04:37</div>
+                            </div>
+                        </li>
+                        <li class="newsong_item">
+                            <div class="newsong_item_box">
+                                <a href=""><img src="images/newsong2.jpg" alt=""></a>
+                                <div class="newsong_item_cont">
+                                    <h3>离开你以后《你的婚礼》电影...</h3>
+                                    <p>周兴哲</p>
+                                </div>
+                                <div class="newsong_item_time">05:09</div>
+                            </div>
+                        </li>
+                        <li class="newsong_item">
+                            <div class="newsong_item_box">
+                                <a href=""><img src="images/newsong3.jpg" alt=""></a>
+                                <div class="newsong_item_cont">
+                                    <h3>魔动闪霸：姐说《听姐说》主...</h3>
+                                    <p>魔动闪霸</p>
+                                </div>
+                                <div class="newsong_item_time">03:04</div>
+                            </div>
+                        </li>
+                        <li class="newsong_item">
+                            <div class="newsong_item_box">
+                                <a href=""><img src="images/newsong4.jpg" alt=""></a>
+                                <div class="newsong_item_cont">
+                                    <h3>别叫我达芬奇 (Punk Version)</h3>
+                                    <p>Lil Ghost小鬼</p>
+                                </div>
+                                <div class="newsong_item_time">03:24</div>
+                            </div>
+                        </li>
+                        <li class="newsong_item">
+                            <div class="newsong_item_box">
+                                <a href=""><img src="images/newsong5.jpg" alt=""></a>
+                                <div class="newsong_item_cont">
+                                    <h3>乌鸦</h3>
+                                    <p>许嵩</p>
+                                </div>
+                                <div class="newsong_item_time">05:29</div>
+                            </div>
+                        </li>
+                        <li class="newsong_item">
+                            <div class="newsong_item_box">
+                                <a href=""><img src="images/newsong6.jpg" alt=""></a>
+                                <div class="newsong_item_cont">
+                                    <h3>complicated</h3>
+                                    <p>刘逸云 Amber Liu</p>
+                                </div>
+                                <div class="newsong_item_time">03:54</div>
+                            </div>
+                        </li>
+                        <li class="newsong_item">
+                            <div class="newsong_item_box">
+                                <a href=""><img src="images/newsong7.jpg" alt=""></a>
+                                <div class="newsong_item_cont">
+                                    <h3>彼方世界 </h3>
+                                    <p>R1SE</p>
+                                </div>
+                                <div class="newsong_item_time">03:28</div>
+                            </div>
+                        </li>
+                        <li class="newsong_item">
+                            <div class="newsong_item_box">
+                                <a href=""><img src="images/newsong8.jpg" alt=""></a>
+                                <div class="newsong_item_cont">
+                                    <h3>这世界那么多人《我要我们在...</h3>
+                                    <p>莫文蔚</p>
+                                </div>
+                                <div class="newsong_item_time">04:45</div>
+                            </div>
+                        </li>
+                        <li class="newsong_item">
+                            <div class="newsong_item_box">
+                                <a href=""><img src="images/newsong9.jpg" alt=""></a>
+                                <div class="newsong_item_cont">
+                                    <h3>深爱《深爱》电影主题曲</h3>
+                                    <p>郁可唯</p>
+                                </div>
+                                <div class="newsong_item_time">04:37</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="newsong_listul">
+                        <li class="newsong_item">
+                            <div class="newsong_item_box">
+                                <a href=""><img src="images/newsong10.jpg" alt=""></a>
+                                <div class="newsong_item_cont">
+                                    <h3>Better Mistakes (Explicit)</h3>
+                                    <p>Bebe Rexha</p>
+                                </div>
+                                <div class="newsong_item_time">02:15</div>
+                            </div>
+                        </li>
+                        <li class="newsong_item">
+                            <div class="newsong_item_box">
+                                <a href=""><img src="images/newsong11.jpg" alt=""></a>
+                                <div class="newsong_item_cont">
+                                    <h3>流光</h3>
+                                    <p>周传雄</p>
+                                </div>
+                                <div class="newsong_item_time">04:51</div>
+                            </div>
+                        </li>
+                        <li class="newsong_item">
+                            <div class="newsong_item_box">
+                                <a href=""><img src="images/newsong12.jpg" alt=""></a>
+                                <div class="newsong_item_cont">
+                                    <h3>将逝之爱《灵语》电影主题曲</h3>
+                                    <p>F.I.R.飞儿乐团</p>
+                                </div>
+                                <div class="newsong_item_time">03:56</div>
+                            </div>
+                        </li>
+                        <li class="newsong_item">
+                            <div class="newsong_item_box">
+                                <a href=""><img src="images/newsong13.jpg" alt=""></a>
+                                <div class="newsong_item_cont">
+                                    <h3>如果你在我身边</h3>
+                                    <p>温岚</p>
+                                </div>
+                                <div class="newsong_item_time">04:15</div>
+                            </div>
+                        </li>
+                        <li class="newsong_item">
+                            <div class="newsong_item_box">
+                                <a href=""><img src="images/newsong14.jpg" alt=""></a>
+                                <div class="newsong_item_cont">
+                                    <h3>你偶像的音乐</h3>
+                                    <p>南征北战NZBZ</p>
+                                </div>
+                                <div class="newsong_item_time">03:42</div>
+                            </div>
+                        </li>
+                        <li class="newsong_item">
+                            <div class="newsong_item_box">
+                                <a href=""><img src="images/newsong15.jpg" alt=""></a>
+                                <div class="newsong_item_cont">
+                                    <h3>Cry Baby《东京复仇者》TV...</h3>
+                                    <p>Official鬍子男dism (Official...</p>
+                                </div>
+                                <div class="newsong_item_time">04:00</div>
+                            </div>
+                        </li>
+                        <li class="newsong_item">
+                            <div class="newsong_item_box">
+                                <a href=""><img src="images/newsong16.jpg" alt=""></a>
+                                <div class="newsong_item_cont">
+                                    <h3>当归</h3>
+                                    <p>萧忆情Alex</p>
+                                </div>
+                                <div class="newsong_item_time">04:15</div>
+                            </div>
+                        </li>
+                        <li class="newsong_item">
+                            <div class="newsong_item_box">
+                                <a href=""><img src="images/newsong17.jpg" alt=""></a>
+                                <div class="newsong_item_cont">
+                                    <h3>ZOOM</h3>
+                                    <p>CNBLUE (씨엔블루)</p>
+                                </div>
+                                <div class="newsong_item_time">03:37</div>
+                            </div>
+                        </li>
+                        <li class="newsong_item">
+                            <div class="newsong_item_box">
+                                <a href=""><img src="images/newsong18.jpg" alt=""></a>
+                                <div class="newsong_item_cont">
+                                    <h3>
+                                        Fast (Motion) (Explicit)</h3>
+                                    <p>Saweetie</p>
+                                </div>
+                                <div class="newsong_item_time">02:50</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="newsong_listul">
+                        <li class="newsong_item">
+                            <div class="newsong_item_box">
+                                <a href=""><img src="images/newsong19.jpg" alt=""></a>
+                                <div class="newsong_item_cont">
+                                    <h3>Get Together</h3>
+                                    <p>David Guetta</p>
+                                </div>
+                                <div class="newsong_item_time">02:42</div>
+                            </div>
+                        </li>
+                        <li class="newsong_item">
+                            <div class="newsong_item_box">
+                                <a href=""><img src="images/newsong20.jpg" alt=""></a>
+                                <div class="newsong_item_cont">
+                                    <h3>奔跑吧，青春</h3>
+                                    <p>王源</p>
+                                </div>
+                                <div class="newsong_item_time">04:24</div>
+                            </div>
+                        </li>
+                        <li class="newsong_item">
+                            <div class="newsong_item_box">
+                                <a href=""><img src="images/newsong21.jpg" alt=""></a>
+                                <div class="newsong_item_cont">
+                                    <h3>Astronaut In The Ocean (E...</h3>
+                                    <p>Masked Wolf /G-Eazy /DDG</p>
+                                </div>
+                                <div class="newsong_item_time">03:15</div>
+                            </div>
+                        </li>
+                        <li class="newsong_item">
+                            <div class="newsong_item_box">
+                                <a href=""><img src="images/newsong22.jpg" alt=""></a>
+                                <div class="newsong_item_cont">
+                                    <h3>신경꺼 (NOYB)</h3>
+                                    <p>ASH ISLAND</p>
+                                </div>
+                                <div class="newsong_item_time">02:34</div>
+                            </div>
+                        </li>
+                        <li class="newsong_item">
+                            <div class="newsong_item_box">
+                                <a href=""><img src="images/newsong23.jpg" alt=""></a>
+                                <div class="newsong_item_cont">
+                                    <h3>내 곁에 있어줘요 (Stay With M</h3>
+                                    <p>BIBI (비비)</p>
+                                </div>
+                                <div class="newsong_item_time">03:55</div>
+                            </div>
+                        </li>
+                        <li class="newsong_item">
+                            <div class="newsong_item_box">
+                                <a href=""><img src="images/newsong24.jpg" alt=""></a>
+                                <div class="newsong_item_cont">
+                                    <h3>Selfish Love (Acoustic Mix)</h3>
+                                    <p>DJ Snake /Selena Gomez</p>
+                                </div>
+                                <div class="newsong_item_time">02:49</div>
+                            </div>
+                        </li>
+                        <li class="newsong_item">
+                            <div class="newsong_item_box">
+                                <a href=""><img src="images/newsong25.jpg" alt=""></a>
+                                <div class="newsong_item_cont">
+                                    <h3>飞行员的眼泪</h3>
+                                    <p>李文琦</p>
+                                </div>
+                                <div class="newsong_item_time">04:21</div>
+                            </div>
+                        </li>
+                        <li class="newsong_item">
+                            <div class="newsong_item_box">
+                                <a href=""><img src="images/newsong26.jpg" alt=""></a>
+                                <div class="newsong_item_cont">
+                                    <h3>无明</h3>
+                                    <p>林仟淇</p>
+                                </div>
+                                <div class="newsong_item_time">03:23</div>
+                            </div>
+                        </li>
+                        <li class="newsong_item">
+                            <div class="newsong_item_box">
+                                <a href=""><img src="images/newsong27.jpg" alt=""></a>
+                                <div class="newsong_item_cont">
+                                    <h3>不合逻辑的假象</h3>
+                                    <p>严雯君</p>
+                                </div>
+                                <div class="newsong_item_time">04:43</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="newsong_listul">
+                        <li class="newsong_item">
+                            <div class="newsong_item_box">
+                                <a href=""><img src="images/newsong28.jpg" alt=""></a>
+                                <div class="newsong_item_cont">
+                                    <h3>灯塔</h3>
+                                    <p>李允儿</p>
+                                </div>
+                                <div class="newsong_item_time">04:01</div>
+                            </div>
+                        </li>
+                        <li class="newsong_item">
+                            <div class="newsong_item_box">
+                                <a href=""><img src="images/newsong29.jpg" alt=""></a>
+                                <div class="newsong_item_cont">
+                                    <h3>Mood (Lil Ghost Remix)</h3>
+                                    <p>24kGoldn / iann dior / Lil Ghost小鬼</p>
+                                </div>
+                                <div class="newsong_item_time">05:09</div>
+                            </div>
+                        </li>
+                        <li class="newsong_item">
+                            <div class="newsong_item_box">
+                                <a href=""><img src="images/newsong30.jpg" alt=""></a>
+                                <div class="newsong_item_cont">
+                                    <h3>你会怎么回答我</h3>
+                                    <p>Mukyo木西 / 茶语music</p>
+                                </div>
+                                <div class="newsong_item_time">03:45</div>
+                            </div>
+                        </li>
+                        <li class="newsong_item">
+                            <div class="newsong_item_box">
+                                <a href=""><img src="images/newsong31.jpg" alt=""></a>
+                                <div class="newsong_item_cont">
+                                    <h3>日落大桥</h3>
+                                    <p>不是花火呀</p>
+                                </div>
+                                <div class="newsong_item_time">02:50</div>
+                            </div>
+                        </li>
+                        <li class="newsong_item">
+                            <div class="newsong_item_box">
+                                <a href=""><img src="images/newsong32.jpg" alt=""></a>
+                                <div class="newsong_item_cont">
+                                    <h3>远方</h3>
+                                    <p>Zic子晨</p>
+                                </div>
+                                <div class="newsong_item_time">04:14</div>
+                            </div>
+                        </li>
+                        <li class="newsong_item">
+                            <div class="newsong_item_box">
+                                <a href=""><img src="images/newsong33.jpg" alt=""></a>
+                                <div class="newsong_item_cont">
+                                    <h3>不加糖 (ZERO)</h3>
+                                    <p>白敬亭</p>
+                                </div>
+                                <div class="newsong_item_time">03:34</div>
+                            </div>
+                        </li>
+                        <li class="newsong_item">
+                            <div class="newsong_item_box">
+                                <a href=""><img src="images/newsong34.jpg" alt=""></a>
+                                <div class="newsong_item_cont">
+                                    <h3>和你告别</h3>
+                                    <p>赵乃吉</p>
+                                </div>
+                                <div class="newsong_item_time">03:19</div>
+                            </div>
+                        </li>
+                        <li class="newsong_item">
+                            <div class="newsong_item_box">
+                                <a href=""><img src="images/newsong35.jpg" alt=""></a>
+                                <div class="newsong_item_cont">
+                                    <h3>追星星的人.</h3>
+                                    <p>吴奇隆 / 窦骁 / 宋轶 ...</p>
+                                </div>
+                                <div class="newsong_item_time">04:06</div>
+                            </div>
+                        </li>
+                        <li class="newsong_item">
+                            <div class="newsong_item_box">
+                                <a href=""><img src="images/newsong36.jpg" alt=""></a>
+                                <div class="newsong_item_cont">
+                                    <h3>如果呢</h3>
+                                    <p>郑润泽</p>
+                                </div>
+                                <div class="newsong_item_time">04:17</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="newsong_switch">
+                <ol>
+                    <li class="newsong_switch_item current"></li>
+                    <li class="newsong_switch_item"></li>
+                    <li class="newsong_switch_item"></li>
+                    <li class="newsong_switch_item"></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <!-- 新歌模块end -->
+    <!-- 排行榜模块start -->
+    <div class="mod_toplist">
+        <div class="w toplist" id="toplist">
+            <header>排行榜</header>
+            <a href="./toplist.html" class="seemore">查看更多></a>
+            <ul class="toplist_list">
+                <li class="toplist_item">
+                    <div class="toplist_box">
+                        <div class="toplist_bg"></div>
+                        <h3 class="toplist_head">
+                            <span>巅峰榜</span>
+                            <a href="">热歌</a>
+                        </h3>
+                        <ul class="toplist_songlist">
+                            <li class="toplist_song">
+                                <div class="toplist_number">1</div>
+                                <div class="toplist_songname">环绕</div>
+                                <div class="toplist_artist">张哲瀚</div>
+                            </li>
+                            <li class="toplist_song">
+                                <div class="toplist_number">2</div>
+                                <div class="toplist_songname">还是会想你</div>
+                                <div class="toplist_artist">林达浪/h3R3</div>
+                            </li>
+                            <li class="toplist_song">
+                                <div class="toplist_number">3</div>
+                                <div class="toplist_songname">给你呀（又名：for ya）</div>
+                                <div class="toplist_artist">将小呢</div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="toplist_item">
+                    <div class="toplist_box">
+                        <div class="toplist_bg">
+                            <h3 class="toplist_head">
+                                <span>巅峰榜</span>
+                                <a href="">新歌</a>
+                            </h3>
+                            <ul class="toplist_songlist">
+                                <li class="toplist_song">
+                                    <div class="toplist_number">1</div>
+                                    <div class="toplist_songname">乌鸦</div>
+                                    <div class="toplist_artist">许嵩</div>
+                                </li>
+                                <li class="toplist_song">
+                                    <div class="toplist_number">2</div>
+                                    <div class="toplist_songname">海底</div>
+                                    <div class="toplist_artist">凤凰传奇</div>
+                                </li>
+                                <li class="toplist_song">
+                                    <div class="toplist_number">3</div>
+                                    <div class="toplist_songname">mood(Li Ghost Remix)</div>
+                                    <div class="toplist_artist">24kGoldn/iann dior...</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="toplist_item">
+                    <div class="toplist_box">
+                        <div class="toplist_bg">
+                            <h3 class="toplist_head">
+                                <span>巅峰榜</span>
+                                <a href="">原创</a>
+                            </h3>
+                            <ul class="toplist_songlist">
+                                <li class="toplist_song">
+                                    <div class="toplist_number">1</div>
+                                    <div class="toplist_songname">这场青春值得骄傲</div>
+                                    <div class="toplist_artist">Vicky萱萱</div>
+                                </li>
+                                <li class="toplist_song">
+                                    <div class="toplist_number">2</div>
+                                    <div class="toplist_songname">荣耀我的Hood</div>
+                                    <div class="toplist_artist">盛宇DamnShine</div>
+                                </li>
+                                <li class="toplist_song">
+                                    <div class="toplist_number">3</div>
+                                    <div class="toplist_songname">痴人荒春</div>
+                                    <div class="toplist_artist">Quinn葵因</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="toplist_item">
+                    <div class="toplist_box">
+                        <div class="toplist_bg">
+                            <h3 class="toplist_head">
+                                <span>巅峰榜</span>
+                                <a href="">飙升</a>
+                            </h3>
+                            <ul class="toplist_songlist">
+                                <li class="toplist_song">
+                                    <div class="toplist_number">1</div>
+                                    <div class="toplist_songname">环绕</div>
+                                    <div class="toplist_artist">张哲瀚</div>
+                                </li>
+                                <li class="toplist_song">
+                                    <div class="toplist_number">2</div>
+                                    <div class="toplist_songname">不加糖（ZERO）</div>
+                                    <div class="toplist_artist">白敬亭</div>
+                                </li>
+                                <li class="toplist_song">
+                                    <div class="toplist_number">3</div>
+                                    <div class="toplist_songname">如果呢</div>
+                                    <div class="toplist_artist">郑润泽</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="toplist_item">
+                    <div class="toplist_box">
+                        <div class="toplist_bg">
+                            <h3 class="toplist_head">
+                                <span>巅峰榜</span>
+                                <a href="">欧美</a>
+                            </h3>
+                            <ul class="toplist_songlist">
+                                <li class="toplist_song">
+                                    <div class="toplist_number">1</div>
+                                    <div class="toplist_songname"> Mood (Lil Ghost Remix)</div>
+                                    <div class="toplist_artist">24kGoldn / iann dior...</div>
+                                </li>
+                                <li class="toplist_song">
+                                    <div class="toplist_number">2</div>
+                                    <div class="toplist_songname">Love Is Gone</div>
+                                    <div class="toplist_artist">SLANDER / Dylan Matthew</div>
+                                </li>
+                                <li class="toplist_song">
+                                    <div class="toplist_number">3</div>
+                                    <div class="toplist_songname"> Dancing With Your Ghost</div>
+                                    <div class="toplist_artist">Sasha Sloan</div>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- 排行榜模块end -->
+    <!-- 底部模块制作start -->
+    <footer class="footer">
+        <div class="w">
+            <div class="mod_service">
+                <ul>
+                    <li>
+                        <span>下载蓝天音乐客户端</span>
+                        <div>
+                            <a href=""> <img src="images/windows .png" alt="">
+                                PC版</a>
+
+                        </div>
+                        <div>
+                            <a href=""> <img src="images/android.png" alt="">
+                                Android版</a>
+                        </div>
+                        <div>
+                            <a href=""> <img src="images/iphone.png" alt="">
+                                iPhone版</a>
+                        </div>
+                    </li>
+                    <li>
+                        <span>特色产品</span>
+                        <div>
+                            <a href=""> <img src="images/K歌.png" alt="">
+                                蓝天K歌</a>
+                        </div>
+                        <div>
+                            <a href=""> <img src="images/Sound-wave 2.png" alt="">
+                                Super Sound</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="mod_help">
+                <dl>
+                    <dt><a href="">开放平台</a></dt>
+                    <dd><a href="">蓝天音乐开放平台</a></dd>
+                    <dd><a href="">蓝天音乐人</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="">蓝天集团官网</a></dt>
+                    <dd><a href="">蓝天音乐</a></dd>
+                </dl>
+            </div>
+            <div class="mod_copyright">
+                <div class="links">
+                    <a href="">关于蓝天</a> | <a href="">About Skyblue </a>| <a href="">服务条款</a> | <a href="">用户服务协议</a> |
+                    <a href="">隐私政策</a> | <a href="">权利声明</a> | <a href="">广告服务</a> | <a href="">蓝天招聘</a> | <a
+                        href="">客服中心</a> | <a href="">网站导航</a>
+                </div>
+                <div class="copyright">
+                    Copyright © 1998 - 2021 Skyblue. All Rights Reserved.<br>
+
+                    蓝天公司 <a href="">版权所有</a> 网络文化经营许可证：<a href="">粤网文[2018]6725-2386号</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- 底部模块制作end -->
+    <script src='./js/index.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- 官网提供的 axios 在线地址 -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="./js/player.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+/* 版心 */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 快捷导航模块 */
+.shortcut {
+    width: 100%;
+    height: 142px;
+}
+.top_subnav{
+    height: 90px;
+    background-color: #fff;
+    border-bottom: 1px solid #f2f2f2;
+
+}
+.top_subnav a:hover {
+    color: skyblue;
+}
+.top_subnav h1 {
+    line-height: 90px;
+    float: left;
+    width: 200px;
+    height: 90px;
+}
+.top_subnav h1 a{
+    line-height: 90px;
+    float: left;
+    width: 200px;
+    height: 90px;
+}
+.top_subnav img {
+    width: 90px;
+    height: 90px;
+}
+.top_subnav li{
+    float: right;
+    left: 50px;
+    width: 100px;
+    height: 90px;
+    text-align: center;
+    line-height: 90px;
+    font-size:larger;
+    font-weight: 800;
+}
+.top_subnav li a{
+    float: right;
+    left: 50px;
+    width: 100px;
+    height: 90px;
+}
+.top_subnav li:first-child {
+    width: 650px;
+}
+
+.top_search {
+    position: relative;
+    width: 260px;
+    height: 64px;
+    margin-left: 150px;
+}
+.top_search input {
+    width: 260px;
+    height: 40px;
+    outline: none;
+}
+.top_search dt {
+    width: 260px;
+    height: 40px;
+}
+.top_search button{
+    position: absolute;
+    top: 37px;
+    right: 0;
+}
+.login {
+    position: absolute;
+    top: 28px;
+    right: -164px;
+    width: 80px;
+    height: 40px;
+    font-size: larger;
+    line-height: 40px;
+
+}
+.login_icon{
+    position: absolute;
+    top: 28px;
+    right: -102px;
+    font-size: larger;
+    line-height: 40px;
+}
+.login_icon img {
+    width: 40px;
+    height: 40px;
+}
+.search_icon img{
+    position: absolute;
+    top: 25px;
+    right: 0;
+    width: 40px;
+    height: 40px;
+}
+.bottom_subnav{
+    height: 52px;
+}
+.bottom_subnav li {
+    width: 190px;
+    height: 52px;
+    text-align: center;
+    line-height: 52px;
+    float: left;
+}
+.bottom_subnav li:first-child {
+    margin-left: 250px;
+}
+.bottom_subnav li a:hover{
+    color: skyblue;
+}
+/* 底部模块制作 */
+.footer {
+    height: 600px;
+    background-color: #333;
+    padding-top: 78px;
+}
+.mod_service{
+    height: 200px;
+}
+.mod_service ul li {
+    padding-left: 35px;
+    float: left;
+    width: 600px;
+    height: 199px;
+}
+.mod_service ul li span{
+    display: inline-block;
+    width: 600px;
+    margin-top: 20px;
+    margin-left: 16px;
+}
+.mod_service ul li div {
+    float: left;
+    margin-top: 32px;
+    margin-left: 16px;
+}
+.mod_service img {
+    width: 50px;
+    height: 50px;
+}
+
+.mod_help {
+    height: 185px;
+    padding-top: 20px;
+    padding-left: 50px;
+    color: #7f7f7f;
+}
+.mod_help dl dt,dd{
+font-size: 16px;
+margin-bottom: 10px;
+}
+.mod_help dl {
+    float: left;
+    margin-right: 200px;
+}
+.mod_help dl:last-child{
+    margin-left: 280px;
+}
+.mod_copyright {
+    padding-top: 20px;
+    text-align: center;
+    color: #7f7f7f;
+}
+.links {
+    margin-bottom: 15px;
+}
+.copyright {
+    line-height: 28px;
+}
+.current{
+    color: skyblue;
+}
+.qrcode {
+    position: fixed;
+    top: 0px;
+    right: 66px;
+}
+

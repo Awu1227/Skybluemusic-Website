@@ -1,0 +1,129 @@
+.main {
+    height: 2000px;
+    /* background-color: lightgreen; */
+    text-align: center;
+}
+.toplist{
+    height: 2000px;
+}
+.toplist_nav {
+    float: left;
+    width: 178px;
+    height: 1672px;
+    border: 1px solid hsla(0,0%,60%,.2);
+}
+.toplist_link {
+    width: 176px;
+    height: 38px;
+    font-size: 15px;
+    line-height: 38px;
+    color: #000;
+}
+.toplist_link_head{
+    width: 176px;
+    height: 48px;
+    font-size: 25px;
+    line-height: 38px;
+    color: #000;
+    margin-top: 50px;
+    /* border-bottom: 1px solid #ccc; */
+}
+.mod_toplist{
+    float: left;
+    width: 990px;
+    height: 1000px;
+    /* background-color: #ccc; */
+    margin-left: 32px;
+}
+.songlist_header{
+    height: 54px;
+
+}
+.songlist_header li{
+    float: left;
+    display: block;
+    width: 200px;
+    height: 54px;
+    line-height: 54px;
+    /* background-color: red; */
+    margin-right: 50px;
+}
+.songlist_header_name {
+    margin-left: 125px;
+}
+.songlist_header_author,.songlist_header_time{
+    text-align: right;
+}
+.songlist_list {
+    width: 990px;
+    height: 1600px;
+    overflow: hidden;
+    /* background-color: lightyellow; */
+}
+.songlist_list li{
+    width: 990px;
+    height: 80px;
+    background-color: #fafafa;
+    margin-top: 20px;
+}
+.songlist_list li:nth-child(odd){
+    background-color: #f7f7f7;
+}
+.songlist_list li:nth-child(-n+3) .songlist_number{
+    font-size: 24px;
+    color: #ff4222;
+}
+.songlist_number {
+    font-size: 24px;
+    color: #000;
+    float: left;
+    margin-left: 20px;
+    width: 40px;
+    height: 80px;
+    line-height: 80px;
+    /* background-color: yellow; */
+}
+.songlist_songname{
+    position: relative;
+    float: left;
+    margin-left: 67px;
+    width: 300px;
+    height: 80px;
+    line-height: 80px;
+    /* background-color: yellow; */
+}
+.songlist_songname img{
+    position: absolute;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+.songlist_songname span{
+    color: #000;
+    position: absolute;
+    left: 86px;
+}
+.songlist_artist {
+    color: #000;
+    float: left;
+    margin-left: 93px;
+    width: 100px;
+    height: 80px;
+    line-height: 80px;
+    /* background-color: yellow; */
+}
+.songlist_time {
+    float: left;
+    margin-left: 146px;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    /* background-color: yellow; */
+}
+.line {
+    width: 136px;
+    height: 0;
+    border-bottom: 1px solid #ccc;
+    margin-left: 18px;
+}

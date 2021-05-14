@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蓝天音乐-海量无损曲库新歌热歌天天畅听的高品质音乐平台！</title>
+    <meta name="keywords" content="音乐,蓝天音乐,在线听歌,音乐下载,音乐播放器,音乐网站,MV,巅峰榜,音乐排行榜,翻译歌曲,热门歌曲,经典老歌,无损音乐,无损曲库" />
+    <!-- 网站说明 -->
+    <meta name="description"
+        content="蓝天音乐是腾讯公司推出的一款网络音乐服务产品，海量音乐在线试听、新歌热歌在线首发、歌词翻译、手机铃声下载、高品质无损音乐试听、海量无损曲库、正版音乐下载、空间背景音乐设置、MV观看等，是互联网音乐播放和下载的优选。" />
+    <!-- 引入favicon图标 -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- 引入我们的初始化样式文件 -->
+    <link rel="stylesheet" href="css/base.css">
+    <!-- 引入我们公共的样式文件 -->
+    <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body>
+    <!-- 快捷导航模块start -->
+    <div class="shortcut" id="player" style="height: 142px;">
+        <div class="w top_subnav">
+            <h1 class="music_title">
+                <a href="index.html">
+                    <img src="images/音乐.png" alt="" title="蓝天音乐">
+                    蓝天音乐
+                </a>
+            </h1>
+            <ul class="mod_mid">
+                <li>
+                    <div class="top_search">
+                        <input type="text" placeholder="搜索音乐、MV、歌单、用户" autocomplete="off" v-model='query'
+                            @keyup.enter="searchMusic();">
+                        <div class="search_icon" @click="searchMusic();"><img src="images/搜索.png" alt=""></div>
+                        <div class="login_icon"><img src="images/登录、注册.png" alt=""></div>
+                        <span class="login"><a href="login.html">登录</a></span>
+                    </div>
+
+
+                </li>
+                <li> <a href="vip.html">VIP</a> </li>
+                <li><a href="javascript:;">我的音乐</a></li>
+                <li><a href="index.html">音乐馆</a></li>
+            </ul>
+        </div>
+        <div class="w bottom_subnav">
+            <ul>
+                <li> <a href="index.html">首页</a></li>
+                <li><a href="singer.html">歌手</a></li>
+                <li><a href="toplist.html">排行榜</a></li>
+                <li><a href="player.html">我的播放器</a></li>
+                <li><a href="player.html">MV</a></li>
+            </ul>
+        </div>
+        <!-- 快捷导航模块 -->
+    </div>
+    <!-- 快捷导航模块send -->
+    <div class="main"
+        style="height: 622px;background-color: red;background: url(./images/mymusic.jpg) 50% no-repeat;background-size: cover;overflow: hidden;">
+        <div class="sectionv" style="max-width: 1200px;height: 208px; margin: 100px auto; position: relative;">
+            <h2
+                style="display: block;width: 420px; height: 100px; color: #fff; font-weight: 200; font-size: xx-large; position: absolute;top: 100px;left: 411px;">
+                <div>私人音乐空间，听我喜欢的歌</div>
+                <div style="font-size: large;padding-left: 135px;margin-top: 20px;">登录管理我的音乐</div>
+                <div
+                    style="background-color: skyblue;width: 66px;height: 36px; line-height: 36px; color: #fff;font-size: medium;position: absolute;left: 172px;margin-top: 20px;">
+                    <a href="login.html" style="color: #fff;">立即登录</a>
+                </div>
+            </h2>
+
+        </div>
+    </div>
+    <!-- 底部模块制作start -->
+    <footer class="footer">
+        <div class="w">
+            <div class="mod_service">
+                <ul>
+                    <li>
+                        <span>下载蓝天音乐客户端</span>
+                        <div>
+                            <a href=""> <img src="images/windows .png" alt="">
+                                PC版</a>
+
+                        </div>
+                        <div>
+                            <a href=""> <img src="images/android.png" alt="">
+                                Android版</a>
+                        </div>
+                        <div>
+                            <a href=""> <img src="images/iphone.png" alt="">
+                                iPhone版</a>
+                        </div>
+                    </li>
+                    <li>
+                        <span>特色产品</span>
+                        <div>
+                            <a href=""> <img src="images/K歌.png" alt="">
+                                蓝天K歌</a>
+                        </div>
+                        <div>
+                            <a href=""> <img src="images/Sound-wave 2.png" alt="">
+                                Super Sound</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="mod_help">
+                <dl>
+                    <dt><a href="">开放平台</a></dt>
+                    <dd><a href="">蓝天音乐开放平台</a></dd>
+                    <dd><a href="">蓝天音乐人</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="">蓝天集团官网</a></dt>
+                    <dd><a href="">蓝天音乐</a></dd>
+                </dl>
+            </div>
+            <div class="mod_copyright">
+                <div class="links">
+                    <a href="">关于蓝天</a> | <a href="">About Skyblue </a>| <a href="">服务条款</a> | <a href="">用户服务协议</a> |
+                    <a href="">隐私政策</a> | <a href="">权利声明</a> | <a href="">广告服务</a> | <a href="">蓝天招聘</a> | <a
+                        href="">客服中心</a> | <a href="">网站导航</a>
+                </div>
+                <div class="copyright">
+                    Copyright © 1998 - 2021 Skyblue. All Rights Reserved.<br>
+
+                    蓝天公司 <a href="">版权所有</a> 网络文化经营许可证：<a href="">粤网文[2018]6725-2386号</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- 底部模块制作end -->
+</body>
+
+</html>
