@@ -1,2 +1,2 @@
 # 📌Skybluemusic-Website
-  模仿QQ音乐官方静态网页
+模仿QQ音乐PC端网页~
